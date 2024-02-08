@@ -1,5 +1,5 @@
 import { BiLogoGmail } from "react-icons/bi"
-import { LinkComponent } from "../linkComponent"
+import { LinkComponent } from "../link-component"
 export function Gmail() {
   return (
     <>

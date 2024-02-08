@@ -1,4 +1,4 @@
-import "./linkComponent.css"
+import "./link-component.css"
 
 import { LinkComponentProps } from "./types"
 import { Clipboard } from "../clipboard"

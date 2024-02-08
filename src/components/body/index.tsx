@@ -6,6 +6,7 @@ import { CommandNotFound } from "../command-not-found/command-not-found"
 import Salutation from "../salutation"
 import { About } from "../about"
 import { Links } from "../links"
+import { Langs } from "../langs"
 
 export default function Body() {
   const { history, pushToHistory, setTerminalRef, resetTerminal } = useTerminal()
@@ -15,11 +16,11 @@ export default function Body() {
 
     pushToHistory(
       <>
-        <div style={{ fontSize: 30 }}>
+        <div style={{ fontSize: "130%" }}>
           <strong>Bem vindo!</strong>.
         </div>
         <Salutation />
-        <div style={{ fontSize: 20 }}>
+        <div style={{ fontSize: "120%" }}>
           Para mais informações digite{" "}
           <span style={{ color: "green" }}>
             <strong>help.</strong>
@@ -57,8 +58,8 @@ export default function Body() {
       exp: () => {
         alert("Falta implementar as linguagens de programacao")
       },
-      lang: () => {
-        alert("Falta implementar as linguagens de programacao")
+      langs: () => {
+        pushToHistory(<Langs />)
       },
     }),
     [pushToHistory],

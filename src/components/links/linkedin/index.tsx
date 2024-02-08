@@ -1,5 +1,5 @@
 import { FaLinkedin } from "react-icons/fa"
-import { LinkComponent } from "../linkComponent"
+import { LinkComponent } from "../link-component"
 export function Linkedin() {
   return (
     <>
