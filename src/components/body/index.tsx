@@ -11,7 +11,8 @@ import { Experiencies } from "../experiences"
 import { WindowsButtons } from "../windows-buttons"
 
 export default function Body() {
-  const { history, pushToHistory, setTerminalRef, resetTerminal } = useTerminal()
+  const { history, pushToHistory, setTerminalRef, resetTerminal, pushToHistoryWithDelay } =
+    useTerminal()
 
   useEffect(() => {
     resetTerminal()

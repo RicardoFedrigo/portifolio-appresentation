@@ -33,7 +33,7 @@ export const useTerminal = () => {
   }, [])
 
   const pushToHistoryWithDelay = useCallback(
-    ({ delay = 0, content }: TerminalPushToHistoryWithDelayProps) =>
+    (content: TerminalHistoryItem, delay = 200) =>
       new Promise((resolve) => {
         setTimeout(() => {
           pushToHistory(content)
