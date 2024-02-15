@@ -77,6 +77,7 @@ export function Langs() {
           <SiMongodb /> MongoDb <SiAmazonsqs /> SQS (aws) <DiRedis /> Redis <GiChargingBull />{" "}
           Bull.js <SiLodash /> Lodash.js <FaBootstrap /> Bootstrap <DiJqueryLogo /> Jquery
         </div>
+        vam
       </div>
       <div className='learn-langs'>
         <div style={{ fontSize: "120%" }}>Atualmente que estou aprendendo: </div>

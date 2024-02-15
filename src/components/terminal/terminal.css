@@ -1,14 +1,44 @@
 .terminal {
-  height: 500px;
+  margin-top: 1%;
+  height: 90%;
   overflow-y: auto;
-  background-color: #3c3c3c;
+  border-color: #3c3c3c;
+  /* background-color: #3c3c3c; */
   color: #c4c4c4;
-  padding: 35px 45px;
-  font-size: 18px;
+  padding: 2% 1%;
+  font-size: 130%;
   line-height: 1.42;
   font-family: "IBM Plex Mono", Consolas, Menlo, Monaco, "Courier New", Courier, monospace;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   text-align: left;
+}
+.windows-maximize {
+  width: 1em;
+  height: 1em;
+  border-radius: 30%;
+  border-color: #c4c4c4;
+  border-style: solid;
+  border-width: 0.2rem;
+}
+.windows-exit,
+.windows-maximize {
+  margin: 0.7% 1% 0 1%;
+}
+
+input::placeholder {
+  font-size: 115%;
+  padding-top: 1px;
+
+  color: white !important;
+}
+
+.windows-exit:hover,
+.windows-maximize:hover {
+  background-color: #a7c8df;
+}
+
+.windows-commands {
+  text-align: right;
 }
 
 @media screen and (max-width: 1921) {
@@ -47,7 +77,7 @@
   color: white;
   border: 0;
   outline: none;
-  font-size: 14px;
+  font-size: 100%;
   line-height: 1.42;
   font-family: "IBM Plex Mono", Consolas, Menlo, Monaco, "Courier New", Courier, monospace;
 }

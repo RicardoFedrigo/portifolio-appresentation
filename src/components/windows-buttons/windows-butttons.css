@@ -1,0 +1,23 @@
+.windows-maximize {
+  width: 1em;
+  height: 1em;
+  border-radius: 30%;
+  border-color: #c4c4c4;
+  border-style: solid;
+  border-width: 0.2rem;
+}
+.windows-exit,
+.windows-maximize {
+  margin: 0.7% 1% 0 1%;
+}
+
+.windows-exit:hover,
+.windows-maximize:hover {
+  background-color: #a7c8df;
+}
+
+.windows-commands {
+  text-align: right;
+  position: fixed;
+  top: 0;
+}

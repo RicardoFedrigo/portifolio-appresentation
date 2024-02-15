@@ -1,15 +1,19 @@
 import "./index.css"
 
 import Body from "../../components/body"
+// import { WindowsButtons } from "../../components/windows-buttons"
 
 export default function Home() {
   return (
-    <>
-      <div>
+    <div>
+      {/* <header className='header'>
+        <WindowsButtons />
+      </header> */}
+      <main>
         <div id='body'>
           <Body />
         </div>
-      </div>
-    </>
+      </main>
+    </div>
   )
 }

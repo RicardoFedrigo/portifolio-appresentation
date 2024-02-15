@@ -13,9 +13,9 @@ export function Help() {
         <p>
           <strong>exp</strong> - Texto sobre minhas experiências e areas atuadas.
         </p>
-        {/* <p>
-        <strong>proj</strong> - Texto descrevendo projetos realizados.{" "}
-      </p> */}
+        <p>
+          <strong>clear</strong> - Limpa Terminal.{" "}
+        </p>
         <p>
           <strong>langs</strong> - Texto descrevendo linguagens de programação e frameworks que
           tenho conhecimento.

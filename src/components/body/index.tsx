@@ -7,6 +7,8 @@ import Salutation from "../salutation"
 import { About } from "../about"
 import { Links } from "../links"
 import { Langs } from "../langs"
+import { Experiencies } from "../experiences"
+import { WindowsButtons } from "../windows-buttons"
 
 export default function Body() {
   const { history, pushToHistory, setTerminalRef, resetTerminal } = useTerminal()
@@ -48,6 +50,7 @@ export default function Body() {
         pushToHistory(
           <>
             <About />
+            <Experiencies />
             <Links />
           </>,
         )
@@ -56,7 +59,7 @@ export default function Body() {
         pushToHistory(<CommandNotFound />)
       },
       exp: () => {
-        alert("Falta implementar as linguagens de programacao")
+        pushToHistory(<Experiencies />)
       },
       langs: () => {
         pushToHistory(<Langs />)
