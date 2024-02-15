@@ -1,7 +1,6 @@
 import "./terminal.css"
 import { ForwardedRef, forwardRef, useCallback, useEffect, useRef, useState } from "react"
 import { CommandAndFlag, TerminalProps } from "./types"
-import { WindowsButtons } from "../windows-buttons"
 
 export const Terminal = forwardRef((props: TerminalProps, ref: ForwardedRef<HTMLDivElement>) => {
   const { history = [], promptLabel = ">", commands = {} } = props
@@ -16,6 +15,10 @@ export const Terminal = forwardRef((props: TerminalProps, ref: ForwardedRef<HTML
     inputRef.current?.focus()
     blinkingInput()
   })
+
+  useEffect(() => {
+    inputRef.current?.scrollIntoView()
+  }, [commands, input])
 
   const blinkingInput = (): void => {
     if (!inputInFocus) {
@@ -45,7 +48,6 @@ export const Terminal = forwardRef((props: TerminalProps, ref: ForwardedRef<HTML
     (e: React.KeyboardEvent<HTMLInputElement>) => {
       const { command, flags } = spreadCommands(input.toLowerCase())
 
-      console.log({ command, flags })
       if (e.key === "Enter") {
         const commandToExecute = commands?.[command]
         if (commandToExecute) {
@@ -53,7 +55,6 @@ export const Terminal = forwardRef((props: TerminalProps, ref: ForwardedRef<HTML
         } else {
           commands?.commandNotFound(flags)
         }
-
         setInputValue("")
       }
     },
