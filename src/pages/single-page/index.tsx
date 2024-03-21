@@ -7,14 +7,15 @@ import "./index.css"
 export function SinglePage() {
   return (
     <div className='single-page'>
-      <div>
+      <div className="indent-8 ml-20 mr-20">
+        
         <About />
         <br />
         <Experiencies />
         <br />
         <Links />
       </div>
-      <div className='single-page-footer'>
+      <div className='single-page-footer' >
         <footer />
       </div>
     </div>

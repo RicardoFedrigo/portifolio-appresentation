@@ -6,7 +6,7 @@ export function Experiencies() {
       </div>
       <br />
       <div>
-        <div className='job-name'>
+        <div className='job-name mb-6 font-bold mb-6 font-bold'>
           <strong>Grupo Integrado </strong>Campo Mourão Estágio / programador – setembro 2019 –
           junho 2021{" "}
         </div>
@@ -22,7 +22,7 @@ export function Experiencies() {
       </div>
       <br />
       <div>
-        <div className='job-name'>
+        <div className='job-name mb-6 font-bold'>
           <strong>Tecnospeed </strong>Tempo integral / programador back-end – junho 2021 – junho
           2022 junho 2021{" "}
         </div>
@@ -39,7 +39,7 @@ export function Experiencies() {
       </div>
       <br />
       <div>
-        <div className='job-name'>
+        <div className='job-name mb-6 font-bold'>
           <strong>Objective </strong>Tempo integral / Full Stack – junho 2022 – setembro 2023 junho
           2021{" "}
         </div>
@@ -55,7 +55,7 @@ export function Experiencies() {
       </div>
       <br />
       <div>
-        <div className='job-name'>
+        <div className='job-name mb-6 font-bold'>
           <strong>Konatus </strong>PJ / Full Stack – Dezembro 2023 - atualmente 2021{" "}
         </div>
         <div className='job-description'>

@@ -1,0 +1,26 @@
+img {
+  width: 300px; /* Set the desired width */
+  height: auto;
+}
+.vertical-line {
+  width: 0; /* Width of the line */
+  height: 20rem; /* Height of the line, adjust as needed */
+  border-left: 3px solid white; /* White border with 10px width on the left side */
+}
+
+.mode {
+    width: 100vw; /* Occupy full viewport width */
+    height: 100vh; 
+}
+
+
+.zoomable-icons {
+    transition: transform 0.3s ease;
+    margin-bottom: 4%;
+    margin-top: 3%;
+  }
+  
+  /* Estilo aplicado quando o mouse passa por cima da iconsm */
+  .zoomable-icons:hover {
+    transform: scale(1.2);
+  }

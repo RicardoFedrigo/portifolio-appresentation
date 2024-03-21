@@ -28,8 +28,8 @@ export default function Body() {
         <div style={{ fontSize: "120%" }}>
           Para mais informações digite{" "}
           <span style={{ color: "green" }}>
-            <strong>help.</strong>
-          </span>
+            <strong>help</strong>
+          </span> e aperte enter.
         </div>
       </>,
     )
