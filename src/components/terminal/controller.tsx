@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react"
-import { TerminalHistory, TerminalHistoryItem, TerminalPushToHistoryWithDelayProps } from "./types"
+import { TerminalHistory, TerminalHistoryItem } from "./types"
 
 export const useTerminal = () => {
   const [terminalRef, setDomNode] = useState<HTMLDivElement>()
