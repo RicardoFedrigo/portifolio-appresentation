@@ -10,6 +10,7 @@ import { Langs } from "../langs"
 import { Experiencies } from "../experiences"
 // import { WindowsButtons } from "../windows-buttons"
 import { useNavigate } from "react-router-dom"
+import { SalutationCmd } from "../salutation-cmd"
 
 export default function Body() {
   const { history, pushToHistory, setTerminalRef, resetTerminal } = useTerminal()
@@ -19,20 +20,7 @@ export default function Body() {
   useEffect(() => {
     resetTerminal()
 
-    pushToHistory(
-      <>
-        <div style={{ fontSize: "130%" }}>
-          <strong>Bem vindo!</strong>.
-        </div>
-        <Salutation />
-        <div style={{ fontSize: "120%" }}>
-          Para mais informações digite{" "}
-          <span style={{ color: "green" }}>
-            <strong>help</strong>
-          </span> e aperte enter.
-        </div>
-      </>,
-    )
+    pushToHistory(<SalutationCmd />)
   }, [])
 
   const commands = useMemo(
@@ -45,6 +33,7 @@ export default function Body() {
       },
       clear: async () => {
         resetTerminal()
+        pushToHistory(<SalutationCmd />)
       },
       links: async () => {
         pushToHistory(<Links />)
