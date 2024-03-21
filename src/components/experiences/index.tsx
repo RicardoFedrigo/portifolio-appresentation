@@ -1,7 +1,7 @@
 export function Experiencies() {
   return (
     <div className='experiencies'>
-      <div style={{ fontSize: 30 }}>
+      <div className='title' style={{ fontSize: 30 }}>
         <strong>EXPERIÊNCIA PROFISSIONAL: </strong>
       </div>
       <br />

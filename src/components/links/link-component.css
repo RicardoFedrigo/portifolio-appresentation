@@ -1,8 +1,12 @@
 svg {
   display: inline !important;
-  vertical-align: middle;
 }
 
 .clipboard {
   padding-left: 1%;
+}
+
+.links {
+  width: 100% !important;
+  height: 100%;
 }

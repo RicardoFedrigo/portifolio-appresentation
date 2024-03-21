@@ -1,8 +1,13 @@
 #body {
   color: aliceblue;
   border-width: 1px;
+  font-style: arial;
 }
 .header {
   position: fixed;
   width: 100%;
+}
+
+footer {
+  margin-top: 20px;
 }

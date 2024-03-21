@@ -8,11 +8,13 @@ import { About } from "../about"
 import { Links } from "../links"
 import { Langs } from "../langs"
 import { Experiencies } from "../experiences"
-import { WindowsButtons } from "../windows-buttons"
+// import { WindowsButtons } from "../windows-buttons"
+import { useNavigate } from "react-router-dom"
 
 export default function Body() {
-  const { history, pushToHistory, setTerminalRef, resetTerminal, pushToHistoryWithDelay } =
-    useTerminal()
+  const { history, pushToHistory, setTerminalRef, resetTerminal } = useTerminal()
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     resetTerminal()
@@ -64,6 +66,12 @@ export default function Body() {
       },
       langs: () => {
         pushToHistory(<Langs />)
+      },
+      exit: () => {
+        setTimeout(() => {
+          navigate("/")
+        }, 1500)
+        pushToHistory("Returning to home ...")
       },
     }),
     [pushToHistory],

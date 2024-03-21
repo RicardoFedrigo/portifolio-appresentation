@@ -35,6 +35,9 @@ export function Help() {
           </a>
         </p>
         <p>
+          <strong>exit</strong> - Volta para a escolha de modo
+        </p>
+        <p>
           <strong>all</strong> - Mostra todas as informações.
         </p>
       </div>
