@@ -18,7 +18,7 @@ export function MeImg() {
   const styleByPath = (): CSSProperties => {
     if (pathname === "/cmd") return {}
 
-    return { transform: "transform 0.3s ease" }
+    return { transition: "transform 0.3s ease" }
   }
 
   const imgZoomClassName = (): string => {

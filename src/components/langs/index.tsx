@@ -1,3 +1,4 @@
+
 import {
   FaNode,
   FaJava,
@@ -12,11 +13,10 @@ import {
   SiTypescript,
   SiNestjs,
   SiCplusplusbuilder,
-  SiCsharp,
+  SiSharp,
   SiBun,
   SiMongodb,
   SiAngular,
-  SiAmazonsqs,
   SiLodash,
 } from "react-icons/si"
 import { FaGolang } from "react-icons/fa6"
@@ -74,7 +74,7 @@ export function Langs() {
         <div className='other-langs-frameworks' style={{ fontSize: "75%" }}>
           <FaDocker /> Docker <FaLinux /> Linux <SiNestjs /> Nest.js <SiCplusplusbuilder /> C/C++{" "}
           <SiBun /> Bun <FaVuejs /> Vue.js <FaGitAlt /> Git <DiPostgresql /> Postgresql{" "}
-          <SiMongodb /> MongoDb <SiAmazonsqs /> SQS (aws) <DiRedis /> Redis <GiChargingBull />{" "}
+          <SiMongodb /> MongoDb  SQS (aws) <DiRedis /> Redis <GiChargingBull />{" "}
           Bull.js <SiLodash /> Lodash.js <FaBootstrap /> Bootstrap <DiJqueryLogo /> Jquery
         </div>
         vam
@@ -84,7 +84,7 @@ export function Langs() {
         <ul>
           <li>
             <a href='https://learn.microsoft.com/pt-br/dotnet/csharp/tour-of-csharp/'>
-              <SiCsharp /> C#
+              <SiSharp /> C#
             </a>
           </li>
           <li>

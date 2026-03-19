@@ -7,7 +7,29 @@ export function Experiencies() {
       <br />
       <div>
         <div className='job-name mb-6 font-bold'>
-          <strong>Konatus </strong>PJ / Full Stack – Dezembro 2023 - atualmente{" "}
+          <strong>Mutant </strong>Tempo integral / Full Stack – Julho 2024 - Dezembro 2025{" "}
+        </div>
+        <div className='job-description'>
+          Atuei como desenvolvedor Full Stack na Mutant, participando ativamente da criação e
+          manutenção de APIs e microsserviços utilizando Node.js com framework NestJS. Realizei o
+          deploy das aplicações na Google Cloud Platform (GCP), utilizando serviços como Pub/Sub,
+          Cloud Functions e Cloud Scheduler para orquestração e processamento de eventos
+          assíncronos. Gerenciei repositórios com Azure DevOps e escrevi testes com Jest, garantindo
+          qualidade e confiabilidade dos sistemas. Contribuí na arquitetura de soluções, colaborando
+          com o time na definição de boas práticas e escalabilidade. Monitorei falhas utilizando
+          BugSnag para depuração de erros em produção.
+          <br />
+          <span style={{ color: "#63f0ff" }}>Front-end: React.js, CoreUI, sass</span>
+          <br />
+          <span style={{ color: "#63f0ff" }}>
+            Back-end: Nodejs, Nestjs, Jest, GCP, Pub/Sub, Cloud Scheduler, Azure DevOps
+          </span>
+        </div>
+      </div>
+      <br />
+      <div>
+        <div className='job-name mb-6 font-bold'>
+          <strong>Konatus </strong>PJ / Full Stack – Dezembro 2023 - Julho 2024{" "}
         </div>
         <div className='job-description'>
           Contratado inicialmente como desenvolvedor back-end Node.js, tive a oportunidade de
@@ -22,7 +44,8 @@ export function Experiencies() {
       <br />
       <div>
         <div className='job-name mb-6 font-bold'>
-          <strong>Objective </strong>Tempo integral / Full Stack – junho 2022 – setembro 2023 2021{" "}
+          <strong>Objective </strong>Tempo integral / Full Stack – junho 2022 – setembro 2023
+          2021{" "}
         </div>
         <div className='job-description'>
           Atuei primeiramente com foco no back-end, porém acabei me tornando Fullstack. No back-end
@@ -54,8 +77,8 @@ export function Experiencies() {
       <br />
       <div>
         <div className='job-name mb-6 font-bold mb-6 font-bold'>
-          <strong>Grupo Integrado </strong>Campo Mourão Estágio / Estágio – setembro 2019 –
-          junho 2021{" "}
+          <strong>Grupo Integrado </strong>Campo Mourão Estágio / Estágio – setembro 2019 – junho
+          2021{" "}
         </div>
         <div className='job-description'>
           No grupo integrado de educação realizei a criação de API's em Node.js no padrão REST para

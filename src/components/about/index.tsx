@@ -10,23 +10,25 @@ export function About() {
       <div style={{ fontSize: 30, textAlign: "center" }}>
         <strong>Ricardo Fedrigo</strong>.
       </div>
+
       <div>
         <p>
-          {"   "}Estudante de bacharelado em ciência da computação(BCC), na Universidade Tecnológica
-          Federal do Paraná (UTFPR) e 1° lugar no 2° Hackathon Agrotec Campo Mourão, escolhido como
-          programador dos times, adoro conversar sobre design pattern e novas soluções e abordagens.
+          {"   "}Estudante de Tecnologia em Análise e Desenvolvimento de Sistemas na Universidade
+          Vencedor do 1º lugar no 2º Hackathon Agrotec Campo Mourão, escolhido como programador dos
+          times. Apaixonado por conversar sobre design patterns, novas soluções e abordagens
+          inovadoras.
         </p>
         <p>
-          {"   "}Trabalho com Node.js a 4 anos, criando e dando manutenção e revisando API's
-          seguindo o padrão REST, nesse tempo atuei com Vue.js, React.js e PHP(5.6 e 7) no
-          front-end, trabalhei com TypeScript, Nest.js e PostgreSQL e criação de micros serviços
-          utilizando docker e docker-compose para preparar ambiente deploy, e realizar testes com
-          ferramentas como Jest e Supertest.
+          {"   "}Trabalho com Node.js há 4 anos, criando, mantendo e revisando APIs seguindo o
+          padrão REST. Possuo experiência com Vue.js, React.js e PHP (5.6 e 7) no front-end, e com
+          TypeScript, Nest.js, PostgreSQL no backend. Experiente em criação de microsserviços
+          utilizando Docker e Docker-compose para preparar ambientes de deploy, com testes
+          realizados por ferramentas como Jest e Supertest.
         </p>
         <p>
-          {"   "}Tento sempre ser resiliente no ambiente de trabalho e prezo sempre pela integração
-          e bem estar entre membros da equipe. Acredito que uma equipe comunicativa e unida sempre
-          apresenta um melhor resultado e produtividade.
+          {"   "}Priorizo ser resiliente no ambiente corporativo, prezando sempre pela integração e
+          bem-estar entre membros da equipe. Convicto de que uma equipe comunicativa e unida sempre
+          apresenta melhor resultado e produtividade.
         </p>
       </div>
     </div>
