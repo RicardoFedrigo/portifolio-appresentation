@@ -3,21 +3,18 @@ import ReactDOM from "react-dom/client"
 import Home from "./pages/home"
 import "./shared/styles/index.css"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { Mode } from "./pages/mode"
+import { Landing } from "./pages/landing"
 import { SinglePage } from "./pages/single-page"
+import { AppLayout } from "./app-layout"
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Mode />,
-  },
-  {
-    path: "/cmd",
-    element: <Home />,
-  },
-  {
-    path: "/single",
-    element: <SinglePage />,
+    element: <AppLayout />,
+    children: [
+      { path: "/", element: <Landing /> },
+      { path: "/cmd", element: <Home /> },
+      { path: "/single", element: <SinglePage /> },
+    ],
   },
 ])
 

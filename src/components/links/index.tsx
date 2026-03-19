@@ -1,3 +1,4 @@
+import "./links.css"
 import { Github } from "./github"
 import { Gmail } from "./gmail"
 import { Linkedin } from "./linkedin"
@@ -12,8 +13,6 @@ export function Links() {
     return "text-left"
   }
 
-
-  
   return (
     <div className={"links" + textSide()}>
       <div className='links-repository'>
@@ -26,7 +25,7 @@ export function Links() {
         <div style={{ fontSize: 30 }}>
           <strong>Contato: </strong>
         </div>
-        <div className={(pathname === "/single" ? "flex justify-center items-center" : "")}>
+        <div className={pathname === "/single" ? "flex justify-center items-center" : ""}>
           <Linkedin />
           <Gmail />
         </div>

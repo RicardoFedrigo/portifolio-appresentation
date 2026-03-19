@@ -8,7 +8,7 @@ export const Terminal = forwardRef((props: TerminalProps, ref: ForwardedRef<HTML
   const [isBlinking, setIsBlinking] = useState<boolean>(false)
   const [inputInFocus, setinputInFocus] = useState<boolean>(false)
 
-  const inputRef = useRef<HTMLInputElement>()
+  const inputRef = useRef<HTMLInputElement>(null)
   const [input, setInputValue] = useState<string>("")
 
   useEffect(() => {

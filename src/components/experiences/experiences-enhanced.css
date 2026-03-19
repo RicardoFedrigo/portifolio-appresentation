@@ -1,0 +1,144 @@
+.experiencies {
+  animation: fadeInUp 0.6s ease-out;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+}
+
+.experiencies .title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #63f0ff 0%, #6366f1 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: slideInDown 0.6s ease-out 0.1s backwards;
+}
+
+.experiencies > div:nth-child(n + 2) {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(15, 23, 42, 0.6);
+  border-left: 3px solid rgba(99, 102, 241, 0.5);
+  transition: all 0.3s ease;
+  animation: slideInLeft 0.6s ease-out backwards;
+}
+
+.experiencies > div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.experiencies > div:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.experiencies > div:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.experiencies > div:nth-child(8) {
+  animation-delay: 0.4s;
+}
+
+.experiencies > div:nth-child(n + 2):hover {
+  background: rgba(15, 23, 42, 0.9);
+  border-left-color: rgba(99, 200, 255, 0.8);
+  transform: translateX(8px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+}
+
+.job-name {
+  font-size: 1.2rem;
+  color: #63f0ff;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.job-description {
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.job-description:hover {
+  color: #e2e8f0;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .experiencies {
+    padding: 1.5rem 1rem;
+  }
+
+  .experiencies .title {
+    font-size: 1.4rem;
+  }
+
+  .experiencies > div:nth-child(n + 2) {
+    padding: 1.2rem;
+  }
+
+  .job-name {
+    font-size: 1.1rem;
+  }
+
+  .job-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experiencies {
+    padding: 1rem 0.75rem;
+  }
+
+  .experiencies .title {
+    font-size: 1.3rem;
+  }
+
+  .experieencies > div:nth-child(n + 2) {
+    padding: 1rem;
+  }
+
+  .job-name {
+    font-size: 1rem;
+  }
+
+  .job-description {
+    font-size: 0.85rem;
+  }
+}
