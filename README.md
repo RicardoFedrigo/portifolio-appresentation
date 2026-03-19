@@ -1,27 +1,109 @@
-# React + TypeScript + Vite
+# 🎯 Portfolio Presentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive portfolio website built with React, TypeScript, and Vite. This project features a terminal-style interface with smooth animations and dark mode design.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Terminal-style Interface** - Interactive command-line like experience
+- **Multi-language Support** - English and Portuguese (Brazilian)
+- **Dark Mode Design** - Creative dark theme with modern aesthetics
+- **Responsive Layout** - Fully responsive design with Windows-style UI
+- **Smooth Animations** - Page transitions and animated components
+- **Redux State Management** - Global state management for language and themes
+- **Tailwind CSS** - Utility-first CSS framework for styling
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Fast build tool with HMR
+- **Redux** - State management
+- **Tailwind CSS** - Styling
+- **React SWC** - Fast JavaScript compiler
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Project Structure
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+src/
+├── components/      # Reusable UI components
+├── pages/          # Page components
+├── contexts/       # React contexts
+├── shared/         # Shared utilities and configuration
+│   ├── redux/      # Redux store and reducers
+│   ├── services/   # Business logic
+│   ├── styles/     # Global styles
+│   └── texts/      # i18n translations
+└── assets/         # Images and icons
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/RicardoFedrigo/portifolio-appresentation.git
+cd portifolio-appresentation
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Build
+
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### Deploy
+
+```bash
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+## 🌐 Live Demo
+
+Visit the live portfolio: [https://ricardofedrigo.github.io/portifolio-appresentation/](https://ricardofedrigo.github.io/portifolio-appresentation/)
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run deploy` - Build and deploy to GitHub Pages
+
+## 🔄 Continuous Deployment
+
+This project uses GitHub Actions for automatic deployment. Every push to the `main` branch triggers:
+
+1. Dependency installation
+2. Production build with Vite
+3. Automatic deployment to GitHub Pages
+
+See `.github/workflows/deploy.yml` for workflow configuration.
+
+## 🌍 Multi-language Support
+
+The portfolio supports multiple languages through JSON translation files:
+
+- English: `src/shared/texts/en/english.json`
+- Portuguese (Brazil): `src/shared/texts/pt/portuguese-brasil.json`
+
+Language preference is managed via Redux store.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
