@@ -5,17 +5,15 @@ import "./shared/styles/index.css"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { Landing } from "./pages/landing"
 import { SinglePage } from "./pages/single-page"
-import { NotFound } from "./pages/not-found"
 import { AppLayout } from "./app-layout"
 
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
     children: [
-      { path: "/portifolio-appresentation", element: <Landing /> },
+      { path: "*", element: <Landing /> },
       { path: "/cmd", element: <Home /> },
       { path: "/single", element: <SinglePage /> },
-      { path: "*", element: <NotFound /> },
     ],
   },
 ])
