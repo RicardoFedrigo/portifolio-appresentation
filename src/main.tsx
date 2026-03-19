@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   {
     element: <AppLayout />,
     children: [
-      { path: "*", element: <Landing /> },
+      { path: "/portifolio-appresentation", element: <Landing /> },
       { path: "/cmd", element: <Home /> },
       { path: "/single", element: <SinglePage /> },
       { path: "/not-found", element: <NotFound /> },
