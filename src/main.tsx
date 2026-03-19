@@ -15,8 +15,7 @@ const router = createBrowserRouter([
       { path: "/portifolio-appresentation", element: <Landing /> },
       { path: "/cmd", element: <Home /> },
       { path: "/single", element: <SinglePage /> },
-      { path: "/not-found", element: <NotFound /> },
-      { path: "/404", element: <NotFound /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ])
